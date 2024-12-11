@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from './product/product';
 
 @Component({
   selector: 'stn-root',
@@ -8,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Stones';
+  parentProduct = new Product(12, "Granitstein Grabo", 120.50, 12);
+  onPriceChanged(price: number) {
+    alert('Neuer Preis: ' + price);
+  }
 }
