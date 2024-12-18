@@ -25,8 +25,7 @@ export class ProductComponent {
     this.showPrice = !this.showPrice;
   }
 
-  // changePrice(price: number): void{
-  //   this.product.price = price;
-  //   this.priceChange.emit(this.product.price);
-  // }
+  changePrice(price: number): void{
+    this.product.price = price;
+  }
 }

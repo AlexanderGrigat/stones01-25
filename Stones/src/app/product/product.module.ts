@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductComponent } from './product.component';
-
+import { UtilsModule } from '../utils/utils.module';
 
 
 @NgModule({
@@ -10,6 +10,7 @@ import { ProductComponent } from './product.component';
   ],
   imports: [
     CommonModule,
+    UtilsModule,
   ],
   exports: [
     ProductComponent,

@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'Stones';
   //parentProduct = new Product(12, "Granitstein Grabo", 120.50, 12);
 
+  today = new Date();
   products: Product[] = [
     {
       "id": 0,
@@ -60,8 +61,4 @@ export class AppComponent {
     alert('Neuer Preis: ' + price);
   }
 
-  changePrice(price: number): void{
-    // this.parentProduct.price = price;
-    // this.onPriceChanged(this.parentProduct.price);
-  }
 }
