@@ -4,6 +4,10 @@ import { ProductComponent } from './product.component';
 import { Product } from './product';
 import { By } from '@angular/platform-browser';
 import { UtilsModule } from '../utils/utils.module';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { ProductModule } from './product.module';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('ProductComponent', () => {
   let component: ProductComponent;
@@ -11,8 +15,14 @@ describe('ProductComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ProductComponent], 
-      imports: [UtilsModule]
+      declarations: [], 
+      imports: [
+        ProductModule,
+        UtilsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        NoopAnimationsModule,
+      ]
     })
     .compileComponents();
 
